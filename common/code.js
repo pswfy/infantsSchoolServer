@@ -1,0 +1,29 @@
+/**
+ * 响应代码
+ * @type {{SUCCESS: number, CREATE_UPDATE_SUCCESS: number, ACCEPTED_SUCCESS: number, DELETE_SUCCESS: number, NO_DATA_SUCCESS: number, BE_EQUAL_TO_SUCCESS: number, DATA_BASE_ERROR: number, PARAMETER_ERROR: number, PARAMETER_TYPE_ERROR: number, CREATE_UPDATE_ERROR: number, DELETE_ERROR: number, BE_EQUAL_TO_ERROR: number, NOT_JURISDICTION: number}}
+ */
+const code = {
+  SUCCESS: 200,//成功
+  CREATE_UPDATE_SUCCESS: 201,//创建或修改成功
+  ACCEPTED_SUCCESS: 202,//异步任务
+  DELETE_SUCCESS: 204,//删除成功
+  NO_DATA_SUCCESS: 205,//数据库没有数据
+  BE_EQUAL_TO_SUCCESS:206,//检验成功
+  USER_LOGIN_SUCCESS:2001,//用户已经登录
+  USER_EXIT_SUCCESS:2002,//用户退出成功
+  DATA_BASE_ERROR: 401,//数据库错误
+  PARAMETER_ERROR: 402,//叁数错误
+  PARAMETER_TYPE_ERROR: 403,//叁数类型错误
+  ERROR:404,//网络错误
+  CREATE_UPDATE_ERROR: 405,//修改或创建不成功
+  DELETE_ERROR: 406,//删除不成功
+  BE_EQUAL_TO_ERROR:407,//检验不相等
+  NOT_JURISDICTION:408,//没有权限
+  USER_LOGIN_ERROR:4001,//用户未登录
+  MD5CODE:'_$*,@.WfY224^~PsW429^',//md5加密
+  USER_EXIT_ERROR:4002,//用户退出失败
+  USER_IP_ERROR:4003,//获取客户端ip错误
+};
+
+
+module.exports = code;
